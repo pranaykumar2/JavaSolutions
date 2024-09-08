@@ -14,13 +14,13 @@ public class PalindromicSubstring {
             for (int j = i + 2; j <= str.length(); j++) {
                 String subStr = str.substring(i, j);
                 if (isPalindrome(subStr)) {
-                    if (subStr.length() > longestSubstr.length()) {
+                    if (subStr.length() >= longestSubstr.length()) {
                         longestSubstr = subStr;
+                        System.out.println(longestSubstr);
                     }
                 }
             }
         }
-        System.out.println(longestSubstr);
     }
     public static boolean isPalindrome(String str) {
         int i = 0;
