@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class DistaceToGreaterLeft {
+public class DistanceToGreaterLeft {
 
     //arr[] = {2, 3, 1, 4, 5, 6, 7, 8}
 
