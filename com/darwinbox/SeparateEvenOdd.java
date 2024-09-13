@@ -5,7 +5,6 @@ import java.util.List;
 import java.util.Scanner;
 
 public class SeparateEvenOdd {
-
     public static void main(String[] args) {
         String numbers = new Scanner(System.in).nextLine();
         String[] numberArray = numbers.split(" ");
@@ -14,7 +13,6 @@ public class SeparateEvenOdd {
     public static void separateEvenOdd(String[] nums) {
         List<Integer> even = new ArrayList<>();
         List<Integer> odd = new ArrayList<>();
-
         for (String num : nums) {
             int number = Integer.parseInt(num);
             if (number % 2 == 0) {

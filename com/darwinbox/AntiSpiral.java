@@ -5,7 +5,6 @@ import java.util.Collections;
 import java.util.List;
 
 public class AntiSpiral {
-
     public static void main(String[] args) {
         int[][] arr = {
                 {1, 2, 3, 4},
