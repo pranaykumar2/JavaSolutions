@@ -4,12 +4,20 @@ import java.util.Scanner;
 
 
 public class IsArmstrongNumber {
+    public static int findLength(int number) {
+        int length = 0;
+        while (number != 0) {
+            length++;
+            number /= 10;
+        }
+        return length;
+    }
     public static boolean isArmstrongNumber(int number) {
         int temp = number;
-        int sum = 0;
+        int sum = 0, length = findLength(number);
         while (number != 0) {
             int rem = number % 10;
-            sum += rem * rem * rem;
+            sum += (int) Math.pow(rem, length);
             number /= 10;
         }
         return temp == sum;
