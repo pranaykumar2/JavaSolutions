@@ -3,7 +3,7 @@ package com.TCSNQT;
 import java.util.Scanner;
 
 
-public class ArmstrongNumber {
+public class IsArmstrongNumber {
     public static boolean isArmstrongNumber(int number) {
         int temp = number;
         int sum = 0;
