@@ -1,4 +1,4 @@
-package com.TCS;
+package com.TCSNQT;
 
 import java.util.Scanner;
 
