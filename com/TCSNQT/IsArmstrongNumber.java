@@ -12,6 +12,7 @@ public class IsArmstrongNumber {
         }
         return length;
     }
+
     public static boolean isArmstrongNumber(int number) {
         int temp = number;
         int sum = 0, length = findLength(number);
