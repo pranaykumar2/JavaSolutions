@@ -9,19 +9,20 @@ public class StringPalindrome {
             if (str.charAt(left) != str.charAt(right)) {
                 return false;
             }
-            left ++;
-            right --;
+            left++;
+            right--;
         }
         return true;
     }
+
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         String string = input.nextLine();
         boolean check = isPalindrome(string);
         if (check) {
-            System.out.println("Palindrome Number");
+            System.out.println("Palindrome String");
         } else {
-            System.out.println("Not a Palindrome Number");
+            System.out.println("Not a Palindrome String");
         }
     }
 }
