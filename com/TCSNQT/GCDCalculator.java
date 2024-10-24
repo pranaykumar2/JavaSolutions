@@ -13,7 +13,7 @@ public class GCDLCMCalculator {
     
     public static int findLCM(int num1, int num2) {
         int gcd = findGCD(num1, num2);
-        return Math.abs((num1 * num2) / gcd);  ll
+        return Math.abs((num1 * num2) / gcd);  
     }
 
     public static void main(String[] args) {
