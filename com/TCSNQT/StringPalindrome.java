@@ -4,15 +4,8 @@ import java.util.Scanner;
 
 public class StringPalindrome {
     static boolean isPalindrome(String str) {
-        int left = 0, right = str.length() - 1;
-        while (left < right) {
-            if (str.charAt(left) != str.charAt(right)) {
-                return false;
-            }
-            left++;
-            right--;
-        }
-        return true;
+        StringBuilder sb = new StringBuilder(str);
+        return str.contentEquals(sb.reverse());
     }
 
     public static void main(String[] args) {
