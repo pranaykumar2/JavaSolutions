@@ -3,10 +3,6 @@ package com.IBM;
 import java.util.*;
 import java.lang.*;
 
-
-
-
-
 class LowerToUpper
 {
 	public static void main (String[] args)
