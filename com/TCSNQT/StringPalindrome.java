@@ -31,8 +31,8 @@ public class StringPalindrome {
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-//        String string = input.nextLine();
-        boolean check = isPalindrome(" ");
+        String string = input.nextLine();
+        boolean check = isPalindrome(string);
         if (check) {
             System.out.println("Palindrome String");
         } else {
