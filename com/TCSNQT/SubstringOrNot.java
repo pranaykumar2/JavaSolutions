@@ -1,6 +1,6 @@
 package com.TCSNQT;
 
-import java.util.Scanner;
+import java.io.*;
 
 public class SubstringOrNot {
     static void isSubstring(String str, String subStr) {
@@ -10,10 +10,10 @@ public class SubstringOrNot {
             System.out.println("Not a Substring");
         }
     }
-    public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-        String str = input.nextLine();
-        String subStr = input.nextLine();
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader((new InputStreamReader(System.in)));
+        String str = br.readLine();
+        String subStr = br.readLine();
         isSubstring(str, subStr);
     }
 }
